@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Museum Gallery</h2>
+                <p class="sub-heading">Art & Car</p>
+            </div>
+            <div class="fitur fitur-1">
+                <h4 class="price">Rp. 5000</h4>
+                <p class="item">Ticket</p>
+            </div>
+            <div class="fitur fitur-2">
+                <h4 class="price">Rp. 10000</h4>
+                <p class="item">Ticket</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h2>Museum Art</h2>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Maps</a></li>
+            </ul>
+        </nav>
+
+        <section class="service">
+            <div class="services">
+                <div class="icon">	&#128126</div>
+                <h2>Photo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium deserunt placeat nulla enim unde?</p>
+            </div>
+            <div class="services">
+                <div class="icon">	&#128126</div>
+                <h2>Photo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium deserunt placeat nulla enim unde?</p>
+            </div>
+            <div class="services">
+                <div class="icon">	&#128126</div>
+                <h2>Photo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium deserunt placeat nulla enim unde?</p>
+            </div>
+            <div class="services">
+                <div class="icon">	&#128126</div>
+                <h2>Photo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium deserunt placeat nulla enim unde?</p>
+            </div>
+            <div class="services">
+                <div class="icon">	&#128126</div>
+                <h2>Photo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium deserunt placeat nulla enim unde?</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Museum Galley</h2>
+            <img src="https://source.unsplash.com/random/200x200" alt="">
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+        </section>
+
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+        })
+    </script>
+
+    <!-- <h2>Pamungkas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia unde architecto doloribus accusantium deserunt dolor facilis asperiores. Quisquam, iure vitae.</p> -->
+</body>
+</html>
