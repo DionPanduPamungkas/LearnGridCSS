@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid | Grid Gap</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+        color: #fff
+      }
+
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+        'footer footer footer'
+        ;
+        gap: 10px;
+      }
+      
+      .item {
+        width: 100%;
+        background-color: rgb(108, 163, 163);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        font-size: 2.5em;
+      }
+      .item:nth-child(even) {
+        /* background-color: deeppink; */
+      }
+
+      .header {
+        grid-area: header;
+        background-color: #333;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #555;
+      }
+      .content {
+        grid-area: content;
+        background-color: #777;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: #999;
+      }
+
+
+      @media only screen and (max-width: 992px ) {
+        .container {
+            grid-template-areas: 
+            'header header header'
+            'sidebar sidebar sidebar'
+            'content content content'
+            'footer footer footer'
+            ;
+            gap: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item header">header</div>
+      <div class="item sidebar">sidebar</div>
+      <div class="item content">content</div>
+      <div class="item footer">footer</div>
+      <!-- <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div> -->
+    </div>
+  </body>
+</html>
